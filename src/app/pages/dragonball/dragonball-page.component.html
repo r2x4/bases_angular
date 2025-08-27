@@ -14,15 +14,20 @@
         <h3>Listado de personajes</h3>
         <ul>
             @for (character of characters(); track character.id; let idx = $index) {
-            <li>
-                <span>{{idx + 1}}. {{character.name}}</span>
-                <strong
-                [class.text-danger]="character.power > 30000"
-                [class.text-primary]="character.power < 30000"
+                @if (character.power > 9000) {
+                    <li>
+                        <span>{{idx + 1}}. {{character.name}}</span>
+                        <strong
+                        [class.text-danger]="character.power > 30000"
+                        [class.text-primary]="character.power < 30000"
                 >
                     ({{character.power }})</strong>
             </li>
-            }
+            } @else {
+                <li><strong>No es relevante</strong></li>
+            }}
+        
+        
         </ul>
 
     </div>
