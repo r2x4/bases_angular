@@ -27,7 +27,7 @@ export class DragonballPageComponent {
         { id: 5, name: 'Yamcha', power: 500 },
     ]);
 
-    powerClasses =  computed( () => {
+    /*powerClasses =  computed( () => {
         return this.characters().map(character => {
             if (character.power > 30000) {
                 return 'text-danger';
@@ -35,5 +35,10 @@ export class DragonballPageComponent {
                 return 'text-primary';
             }
         });
-    });
+    });*/
+
+
+    addCharacter(){
+        throw new Error('Not implemented');
+    }
 }
