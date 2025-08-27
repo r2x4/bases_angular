@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_hero">  
+        <h1>{{ name }}</h1>
+
+        <dl>
+            <dt>Nombre:</dt>
+            <dd>{{ name }}</dd>
+
+            <dt>Edad:</dt>
+            <dd>{{ age }}</dd>
+
+            <dt>Método:</dt>
+            <dd>{{ heroDescription() }}</dd>
+
+            <dt>Capitalizado:</dt>
+            <!-- <dd>{{ capitalizeName() }}</dd> -->
+            <dd>{{ name | uppercase }}</dd> <!-- es mejor para capitalizar -->
+        </dl>
+            <div class="button-group">
+                <button (click)="changeHero()" class="btn btn-primary mx-2">Cambiar nombre</button>
+                <button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+                <button (click)="resetForm()" class="btn btn-primary mx-2">Reinicio</button>
+            </div>
+    </div>
+</body>
+</html>

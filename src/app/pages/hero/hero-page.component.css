@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.container_hero {
+    background-color: rgb(186, 245, 206);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(62, 12, 12, 0.96);
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.container_hero h1 {
+    font-size: 2rem;
+    color: #0b0b0b;
+    margin-bottom: 15px;
+}
+
+.container_hero dl {
+    display: grid;
+    grid-template-columns: max-content auto; 
+    gap: 5px 15px;
+    margin: 10% 0 20px 0;
+    text-align: left;
+}
+
+.container_hero dt {
+    font-weight: bold;
+    color: #a14444;
+    text-align: left;
+    margin: 0;
+}
+
+.container_hero dd {
+    margin: 0;
+    color: #020b14;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Contenedor de botones */
+.container_hero .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Botones */
+.container_hero button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1 1 auto;
+    min-width: 100px;
+}
+
+.container_hero button:hover {
+    background-color: #0056b3;
+}
+
+.container_hero button:active {
+    transform: scale(0.98);
+}
+
+.container_hero .mx-2 {
+    margin: 0 8px;
+}
+
+/* --- Media Queries para pantallas pequeñas --- */
+@media screen and (max-width: 600px) {
+    .container_hero {
+        width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .container_hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .container_hero dl {
+        grid-template-columns: 1fr;
+        gap: 5px 0;
+    }
+
+    .container_hero dt,
+    .container_hero dd {
+        text-align: left;
+    }
+
+    .container_hero button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

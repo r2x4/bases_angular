@@ -1,0 +1,33 @@
+.container_uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+.container_uno button {
+    background-color: rgb(73, 73, 211);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.container_uno button:hover {
+    background-color: darkblue;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(239, 52, 52);
+}
