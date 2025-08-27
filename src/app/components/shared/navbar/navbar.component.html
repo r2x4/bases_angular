@@ -1,9 +1,32 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #1976d2;
+        color: aliceblue;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: rgb(7, 7, 7);
+    }
+</style>
+
+
+
 
 	<nav>
 		<!-- <a href="">Counter </a> not needed, it's redundant -->
 
-		<a routerlink="/">Counter</a>
-		<a routerlink="/hero">Hero</a>
+		<a [routerLink]="['/']">Contador</a>
+		<a [routerLink]="['/hero']">Hero</a>
 
 	</nav>
 
