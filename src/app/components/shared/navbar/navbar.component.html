@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-around;
         padding: 10px;
-        background-color: #1976d2;
+        background-color: #25282b;
         color: aliceblue;
     }
 
@@ -13,9 +13,14 @@
         font-weight: bold;
     }
 
+    nav a.active {
+        color: rgb(219, 147, 244);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
     nav a:hover {
         text-decoration: underline;
-        color: rgb(7, 7, 7);
     }
 </style>
 
@@ -25,8 +30,11 @@
 	<nav>
 		<!-- <a href="">Counter </a> not needed, it's redundant -->
 
-		<a [routerLink]="['/']">Contador</a>
-		<a [routerLink]="['/hero']">Hero</a>
+		<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contador</a>
+
+		<a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero</a>
+
+        <a routerLink="/dragonball" routerLinkActive="active">Dragon Ball</a>
 
 	</nav>
 
