@@ -30,11 +30,16 @@
 	<nav>
 		<!-- <a href="">Counter </a> not needed, it's redundant -->
 
-		<a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contador</a>
+		<a routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Contador</a>
 
 		<a [routerLink]="['/hero']" [routerLinkActive]="'active'">Hero</a>
 
-        <a routerLink="/dragonball" routerLinkActive="active">Dragon Ball</a>
+    <a routerLink="/dragonball" routerLinkActive="active">Dragon Ball</a>
+
+    <a routerLink="/dragonball-super" routerLinkActive="active">Dragon Ball Super</a>
 
 	</nav>
 
